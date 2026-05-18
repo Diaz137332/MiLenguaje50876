@@ -1,7 +1,9 @@
-// Generated from MiLenguaje.g4 by ANTLR 4.13.2
+// Generated from c:/Users/Ulises/MiLenguaje50876/MiLenguaje.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import MiLenguajeListener from './MiLenguajeListener.js';
+import MiLenguajeVisitor from './MiLenguajeVisitor.js';
+
 const serializedATN = [4,1,9,32,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,1,0,1,0,
 5,0,11,8,0,10,0,12,0,14,9,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,
 1,2,1,2,1,2,1,3,1,3,1,3,0,0,4,0,2,4,6,0,1,1,0,7,8,29,0,12,1,0,0,0,2,17,1,
@@ -246,6 +248,14 @@ class ProgContext extends antlr4.ParserRuleContext {
 		}
 	}
 
+	accept(visitor) {
+	    if ( visitor instanceof MiLenguajeVisitor ) {
+	        return visitor.visitProg(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
 
 }
 
@@ -289,6 +299,14 @@ class DeclaracionContext extends antlr4.ParserRuleContext {
 		}
 	}
 
+	accept(visitor) {
+	    if ( visitor instanceof MiLenguajeVisitor ) {
+	        return visitor.visitDeclaracion(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
 
 }
 
@@ -328,6 +346,14 @@ class ImpresionContext extends antlr4.ParserRuleContext {
 		}
 	}
 
+	accept(visitor) {
+	    if ( visitor instanceof MiLenguajeVisitor ) {
+	        return visitor.visitImpresion(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
 
 }
 
@@ -365,6 +391,14 @@ class ValorContext extends antlr4.ParserRuleContext {
 	    if(listener instanceof MiLenguajeListener ) {
 	        listener.exitValor(this);
 		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof MiLenguajeVisitor ) {
+	        return visitor.visitValor(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
 	}
 
 

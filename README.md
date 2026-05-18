@@ -2,7 +2,7 @@
 
 Este proyecto implementa un analizador léxico y sintáctico utilizando ANTLR4 y JavaScript (Node.js).
 
-Para poder probar el analizador se debe ejecutar en la terminal: node inde.js
+Para poder probar el analizador se debe ejecutar en la terminal: node index.js
 
 Los ejemplos a probar están marcados como:
 

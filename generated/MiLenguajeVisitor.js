@@ -1,4 +1,4 @@
-// Generated from c:/Users/Ulises/Desktop/MiLenguaje50876/MiLenguaje.g4 by ANTLR 4.13.2
+// Generated from c:/Users/Ulises/MiLenguaje50876/MiLenguaje.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
